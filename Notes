@@ -17,6 +17,10 @@
 	(one definition can be extended/injected into the other) 
 	Finally, create the JSP files that the general.xml and referring to.
 	
+3.	Its best practice to split the bean up instead of having them all in the dispatcher servlet
+	Spring will read the contents of the ApplicationContext.xml and create another context.
+	You can have multiple servlets and multiple contexts defined by the dispatcher servlets
+	We will use the dispatcher servlet to define presentation layer and seperate the rest.
 
 	
 
