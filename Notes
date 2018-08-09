@@ -1,0 +1,22 @@
+1.	Setting up spring MVC
+	Add the multiple Spring Dependencies and properties to the spring pom.xml 
+	The dispatcher Servlet is the front controller that recieves the request from the client and passes to a secondary controller.
+	The second controller renders a response with the JSP and returns to the client.
+	The dispatcher servlet mapping are configured in the Web.xml file including the Spring application entry point
+	so.. When the client requests a html file (for example) the servlet will create a Spring context which requires another XML file to create spring beans in the context
+	The spring beans file must be in WEB-INF directory (These beans define the secondary controller and more).
+	Create a Secondary Controller - IndexController.java, which is annotated as the controller uses RequestMapping to point to the HelloWorld.jsp 
+	The root directory will now redirect to the Index.jsp via spring
+	
+2. 	Adding Apache tiles.
+	We want to split the Jsp file into multiple files - defines a template made up of parts and link them together
+	An XML file contains the definitions (mappings) where every definition is a webpage
+	Firstly Add the Apache tiles dependencies to the pom file.
+	Import Tiles into Spring by adding the required beans the dispatcher-Servlet and define the templates (general.xml)
+	Next, create the general.xml which documents how the pages are laid out. Here the definitions (tiles) are defined 
+	(one definition can be extended/injected into the other) 
+	Finally, create the JSP files that the general.xml and referring to.
+	
+
+	
+
