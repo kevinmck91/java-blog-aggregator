@@ -21,6 +21,13 @@
 	Spring will read the contents of the ApplicationContext.xml and create another context.
 	You can have multiple servlets and multiple contexts defined by the dispatcher servlets
 	We will use the dispatcher servlet to define presentation layer and seperate the rest.
+	
+4. 	Add jars for hibernate entity manager and hence hibernate.
+	Add the dependency / driver for the hsql database (for testing purposes)
+	Tick the jbdc namespace which allows the hdbc bean in the Application Context
+	Add the bean LocalContainerEntityManagerFactoryBean to ApplicationContext
+	Enable transactions in the ApplicationContext
+	 
 
 	
 
